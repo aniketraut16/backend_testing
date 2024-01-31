@@ -13,3 +13,7 @@ app.get('/:name', (req, res) => {
 app.get('*', (req, res) => {
     res.status(404).send('Not Found');
 });
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
